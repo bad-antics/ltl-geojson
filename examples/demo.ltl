@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_geojson
+
+import std::io
+use ltl_geojson as lib
+
+fn main() {
+    io::println("ltl_geojson demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
